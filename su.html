@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>Relógio Steven Universe</title>
+    <link rel="stylesheet" href="su.css">
+</head>
+<body>
+  
+    <section class="sec">
+        <header>
+            <a href="#"><img src="lion.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="su.html">HOME</a></li>
+                <li><a href="">STEVEN UNIVERSE</a></li>
+                <li><a href="">WALLPAPERS</a></li>
+                <li><a href="#">GITHUB</a></li>
+            </ul>
+        </header> <!--fim header-->
+    
+    <div class="relogio">
+        <div>
+            <span id="horas">00</span>
+            <span class="tempo">Horas</span>
+        </div>
+
+        <div>
+            <span id="minutos">00</span>
+            <span class="tempo">Minutos</span>
+        </div>
+
+        <div>
+            <span id="segundos">00</span>
+            <span class="tempo">Segundos</span>
+        </div>
+    </div>
+
+
+    <div class="imgbox"> <!--inicio do imgbox-->
+
+        <img src="s1.png" alt="" class="su">
+
+    </div><!--fim do imgbox-->
+
+        <ul class="thumb"><!--inicio do thumb-->
+            <li><img src="s1.png" onclick="imgSlider('s1.png');changeBgcolor('#B35F6E')"></li>
+            <li><img src="s2.png" onclick="imgSlider('s2.png');changeBgcolor('#1E7973')"></li>
+            <li><img src="s3.png" onclick="imgSlider('s3.png');changeBgcolor('#6F12C7')"></li>
+            <li><img src="s4.png" onclick="imgSlider('s4.png');changeBgcolor('#BE455A')"></li>
+
+        </ul><!--fim do thumb-->
+        <script src="su.js"></script>
+    </section><!--fim seção-->
+
+    <script type="text/javascript">
+    function imgSlider(anything){document.querySelector('.su').src = anything;
+    }
+    function changeBgcolor(color){
+        const sec = document.querySelector('.sec');
+        sec.style.background = color;
+    }
+    </script>
+    
+</body>
+</html>
